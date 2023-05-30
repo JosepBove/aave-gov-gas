@@ -2,14 +2,19 @@ const ethers = require("ethers");
 const fs = require('fs').promises;
 require("dotenv").config();
 
-let provider = new ethers.providers.EtherscanProvider(
+let etherscanProvider = new ethers.providers.EtherscanProvider(
     ethers.providers.getNetwork("homestead"),
     process.env.ETHERSCAN_API_KEY
 );
 
+let alchemyProvider = new ethers.providers.AlchemyProvider(
+    ethers.providers.getNetwork("homestead"),
+    process.env.ALCHEMY_RPC
+);
+
 async function getGasCosts(delegates) {
 
-    let history = await provider.getHistory(
+    let history = await etherscanProvider.getHistory(
         process.env.AAVE_GOVERNANCE_V2,
         process.env.FROM_BLOCK,
         process.env.TO_BLOCK
@@ -24,7 +29,7 @@ async function getGasCosts(delegates) {
         delegateIndex = -1;
         signerIndex = -1;
 
-        receipt = (await provider.getTransactionReceipt(history[i].hash));
+        receipt = (await alchemyProvider.getTransactionReceipt(history[i].hash));
 
         for(let j = 0; j < delegates.length; j++) {
             for(let k = 0; k < delegates[j].signers.length; k++) {

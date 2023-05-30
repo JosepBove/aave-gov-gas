@@ -4,69 +4,69 @@
 		"signers": [
 			{
 				"address": "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4",
-				"gasUsed": "0.003685800864668004"
+				"gasUsed": "0.932130488956747128"
 			}
 		],
-		"gasUsed": "0.003685800864668004"
+		"gasUsed": "0.932130488956747128"
 	},
 	{
 		"name": "Flipside",
 		"signers": [
 			{
 				"address": "0x62a43123FE71f9764f26554b3F5017627996816a",
-				"gasUsed": "0.011981792009259212"
+				"gasUsed": "0.370735041294807683"
 			}
 		],
-		"gasUsed": "0.011981792009259212"
+		"gasUsed": "0.370735041294807683"
 	},
 	{
 		"name": "michigan",
 		"signers": [
 			{
 				"address": "0x13BDaE8c5F0fC40231F0E6A4ad70196F59138548",
-				"gasUsed": "0.008393421314379284"
+				"gasUsed": "0.20274679639953312"
 			}
 		],
-		"gasUsed": "0.008393421314379284"
+		"gasUsed": "0.20274679639953312"
 	},
 	{
 		"name": "LBS Blockchain",
 		"signers": [
 			{
 				"address": "0xB83b3e9C8E3393889Afb272D354A7a3Bd1Fbcf5C",
-				"gasUsed": "0.004073134240813744"
+				"gasUsed": "0.25173392572271229"
 			}
 		],
-		"gasUsed": "0.004073134240813744"
+		"gasUsed": "0.25173392572271229"
 	},
 	{
 		"name": "Wintermute",
 		"signers": [
 			{
 				"address": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
-				"gasUsed": "0.00309167337053288"
+				"gasUsed": "0.183914494981282174"
 			}
 		],
-		"gasUsed": "0.00309167337053288"
+		"gasUsed": "0.183914494981282174"
 	},
 	{
 		"name": "keyrock",
 		"signers": [
 			{
 				"address": "0x1855f41B8A86e701E33199DE7C25d3e3830698ba",
-				"gasUsed": 0
+				"gasUsed": "0.150415584138013012"
 			}
 		],
-		"gasUsed": "0.0"
+		"gasUsed": "0.150415584138013012"
 	},
 	{
 		"name": "Stablelab",
 		"signers": [
 			{
 				"address": "0xea172676E4105e92Cc52DBf45fD93b274eC96676",
-				"gasUsed": "0.002705777423449644"
+				"gasUsed": "0.282351915148089228"
 			}
 		],
-		"gasUsed": "0.002705777423449644"
+		"gasUsed": "0.282351915148089228"
 	}
 ]
