@@ -8,6 +8,7 @@ Script to get the gas used form block a to b on the governance contract of Aave 
 1. Run `npm i`
 2. Copy `.env.example` and name it `.env`
 3. Set your env variables
+4. Run `node index.js`
 
 It works without an Etherscan API key but it will be very very slow
 
