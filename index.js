@@ -9,7 +9,7 @@ let etherscanProvider = new ethers.providers.EtherscanProvider(
 
 let alchemyProvider = new ethers.providers.AlchemyProvider(
     ethers.providers.getNetwork("homestead"),
-    process.env.ALCHEMY_RPC
+    process.env.ALCHEMY_API_KEY
 );
 
 async function getGasCosts(delegates) {
@@ -83,7 +83,16 @@ async function writeOutput(output) {
         output[i].gasUsed = ethers.utils.formatEther(sum);
     }
 
-    await fs.writeFile('./data/output.json', JSON.stringify(output, null, '\t'));
+    let file = {delegates: {}, block_range: {}};
+
+    file.delegates = output;
+
+    file.block_range = {
+        from: process.env.FROM_BLOCK,
+        to: process.env.TO_BLOCK
+    }
+
+    await fs.writeFile('./data/output.json', JSON.stringify(file, null, '\t'));
 }
 
 async function main() {
