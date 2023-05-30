@@ -55,7 +55,7 @@ async function getGasCosts(delegates) {
 }
 
 async function parseDelegates() {
-    let data = await fs.readFile('input.json', 'utf-8');
+    let data = await fs.readFile('./data/input.json', 'utf-8');
     let obj = JSON.parse(data);
 
     obj.map(x => 
@@ -83,7 +83,7 @@ async function writeOutput(output) {
         output[i].gasUsed = ethers.utils.formatEther(sum);
     }
 
-    await fs.writeFile('output.json', JSON.stringify(output, null, '\t'));
+    await fs.writeFile('./data/output.json', JSON.stringify(output, null, '\t'));
 }
 
 async function main() {
