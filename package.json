@@ -1,0 +1,23 @@
+{
+  "name": "aave-gov-gas-trackere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosepBove/aave-gov-gas.git"
+  },
+  "author": "JosepBove",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/JosepBove/aave-gov-gas/issues"
+  },
+  "homepage": "https://github.com/JosepBove/aave-gov-gas#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ethers": "5.7.2"
+  }
+}

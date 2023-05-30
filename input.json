@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ACI",
+    "signers": [
+      "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4"
+    ]
+  },
+  {
+    "name": "Flipside",
+    "signers": [
+      "0x62a43123FE71f9764f26554b3F5017627996816a"
+    ]
+  },
+  {
+    "name": "michigan",
+    "signers": [
+      "0x13BDaE8c5F0fC40231F0E6A4ad70196F59138548"
+    ]
+  },
+  {
+    "name": "LBS Blockchain",
+    "signers": [
+      "0xB83b3e9C8E3393889Afb272D354A7a3Bd1Fbcf5C"
+    ]
+  },
+  {
+    "name": "Wintermute",
+    "signers": [
+      "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1"
+    ]
+  },
+  {
+    "name": "keyrock",
+    "signers": [
+      "0x1855f41B8A86e701E33199DE7C25d3e3830698ba"
+    ]
+  },
+  {
+    "name": "Stablelab",
+    "signers": [
+      "0xea172676E4105e92Cc52DBf45fD93b274eC96676"
+    ]
+  }
+]
