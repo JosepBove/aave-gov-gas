@@ -17,7 +17,8 @@
     "name": "TokenLogic",
     "signers": [
       {"address": "0xA06c2e5BB33cd6718b08EC9335081Cbba62861f7", "isMultisig": false},
-      {"address": "0x2cc1ADE245020FC5AAE66Ad443e1F66e01c54Df1", "isMultisig": true}
+      {"address": "0x2cc1ADE245020FC5AAE66Ad443e1F66e01c54Df1", "isMultisig": true},
+      {"address": "0x55B16934C3661E1990939bC57322554d9B09f262", "isMultisig": false}
     ]
   },
   {

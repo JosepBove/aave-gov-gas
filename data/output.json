@@ -44,9 +44,14 @@
 					"address": "0x2cc1ADE245020FC5AAE66Ad443e1F66e01c54Df1",
 					"isMultisig": true,
 					"gasUsed": "0.031595613393902744"
+				},
+				{
+					"address": "0x55B16934C3661E1990939bC57322554d9B09f262",
+					"isMultisig": false,
+					"gasUsed": "0.342084669200020839"
 				}
 			],
-			"gasUsed": "0.144394476890993568"
+			"gasUsed": "0.486479146091014407"
 		},
 		{
 			"name": "michigan",
