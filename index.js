@@ -7,10 +7,23 @@ let etherscanProvider = new ethers.providers.EtherscanProvider(
     process.env.ETHERSCAN_API_KEY
 );
 
-let alchemyProvider = new ethers.providers.AlchemyProvider(
-    ethers.providers.getNetwork("homestead"),
-    process.env.ALCHEMY_API_KEY
-);
+let provider;
+
+if (process.argv.includes("--chainstack")) {
+    provider = new ethers.providers.JsonRpcProvider(process.env.CHAINSTACK_NODE_URL);
+    console.log("Connected to Chainstack node.");
+} else if (process.argv.includes("--local")) {
+    provider = new ethers.providers.JsonRpcProvider(process.env.LOCAL_NODE_URL);
+    console.log("Connected to local node.");
+} else {
+    // Default to Alchemy if no flag or --alchemy flag is provided
+    provider = new ethers.providers.AlchemyProvider(
+        ethers.providers.getNetwork("homestead"),
+        process.env.ALCHEMY_API_KEY
+    );
+    console.log("Connected to Alchemy.");
+}
+
 
 async function getGasCosts(delegates) {
 
@@ -29,7 +42,7 @@ async function getGasCosts(delegates) {
         delegateIndex = -1;
         signerIndex = -1;
 
-        receipt = (await alchemyProvider.getTransactionReceipt(history[i].hash));
+        receipt = (await provider.getTransactionReceipt(history[i].hash));
 
         for(let j = 0; j < delegates.length; j++) {
             for(let k = 0; k < delegates[j].signers.length; k++) {
@@ -49,6 +62,7 @@ async function getGasCosts(delegates) {
                 delegates[delegateIndex].signers[signerIndex].gasUsed = gas;
             }
         }
+        console.log(`Processed transaction ${i + 1} of ${history.length}`);
     }
     return delegates;
 
@@ -58,17 +72,26 @@ async function parseDelegates() {
     let data = await fs.readFile('./data/input.json', 'utf-8');
     let obj = JSON.parse(data);
 
-    obj.map(x => 
-        x.signers = x.signers.map( e =>
-            e = {
+    obj.map((x, index) => {
+        x.signers = x.signers.map(e => {
+            // Check if the address has a correct checksum
+            const checksummedAddress = ethers.utils.getAddress(e);
+            if (checksummedAddress !== e) {
+                throw new Error(`Address ${e} does not have a correct checksum. Expected ${checksummedAddress}`);
+            }
+
+            return {
                 address: e,
                 gasUsed: 0 
-            }
-        )
-    );
+            };
+        });
+        console.log(`Parsed delegate ${index + 1} of ${obj.length}`);
+    });
 
     return obj;
 }
+
+
 
 async function writeOutput(output) {
     

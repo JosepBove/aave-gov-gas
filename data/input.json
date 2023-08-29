@@ -2,13 +2,21 @@
   {
     "name": "ACI",
     "signers": [
-      "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4"
+      "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4",
+      "0x3Cbded22F878aFC8d39dCD744d3Fe62086B76193",
+      "0x57ab7ee15cE5ECacB1aB84EE42D5A9d0d8112922"
     ]
   },
   {
-    "name": "Flipside",
+    "name": "HKTrust",
     "signers": [
-      "0x62a43123FE71f9764f26554b3F5017627996816a"
+      "0xE4594A66d9507fFc0d4335CC240BD61C1173E666"
+    ]
+  },
+  {
+    "name": "TokenLogic",
+    "signers": [
+      "0xA06c2e5BB33cd6718b08EC9335081Cbba62861f7"
     ]
   },
   {
