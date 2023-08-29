@@ -5,92 +5,107 @@
 			"signers": [
 				{
 					"address": "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4",
-					"gasUsed": "0.752567606415828048"
+					"isMultisig": false,
+					"gasUsed": "0.970158655007009937"
 				},
 				{
 					"address": "0x3Cbded22F878aFC8d39dCD744d3Fe62086B76193",
-					"gasUsed": "0.326632525887672313"
+					"isMultisig": false,
+					"gasUsed": "0.331464166396161753"
 				},
 				{
 					"address": "0x57ab7ee15cE5ECacB1aB84EE42D5A9d0d8112922",
-					"gasUsed": "0.01109571033798792"
+					"isMultisig": false,
+					"gasUsed": "0.01658542449913344"
 				}
 			],
-			"gasUsed": "1.090295842641488281"
+			"gasUsed": "1.31820824590230513"
 		},
 		{
 			"name": "HKTrust",
 			"signers": [
 				{
 					"address": "0xE4594A66d9507fFc0d4335CC240BD61C1173E666",
-					"gasUsed": 0
+					"isMultisig": true,
+					"gasUsed": "0.063348162468039819"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.063348162468039819"
 		},
 		{
 			"name": "TokenLogic",
 			"signers": [
 				{
 					"address": "0xA06c2e5BB33cd6718b08EC9335081Cbba62861f7",
+					"isMultisig": false,
 					"gasUsed": "0.112798863497090824"
+				},
+				{
+					"address": "0x2cc1ADE245020FC5AAE66Ad443e1F66e01c54Df1",
+					"isMultisig": true,
+					"gasUsed": "0.031595613393902744"
 				}
 			],
-			"gasUsed": "0.112798863497090824"
+			"gasUsed": "0.144394476890993568"
 		},
 		{
 			"name": "michigan",
 			"signers": [
 				{
 					"address": "0x13BDaE8c5F0fC40231F0E6A4ad70196F59138548",
-					"gasUsed": "0.094028941466582086"
+					"isMultisig": false,
+					"gasUsed": "0.098021333582409476"
 				}
 			],
-			"gasUsed": "0.094028941466582086"
+			"gasUsed": "0.098021333582409476"
 		},
 		{
 			"name": "LBS Blockchain",
 			"signers": [
 				{
 					"address": "0xB83b3e9C8E3393889Afb272D354A7a3Bd1Fbcf5C",
-					"gasUsed": "0.156466388981554788"
+					"isMultisig": false,
+					"gasUsed": "0.157592445696896148"
 				}
 			],
-			"gasUsed": "0.156466388981554788"
+			"gasUsed": "0.157592445696896148"
 		},
 		{
 			"name": "Wintermute",
 			"signers": [
 				{
 					"address": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
-					"gasUsed": "0.138870940976992217"
+					"isMultisig": false,
+					"gasUsed": "0.139950822361304377"
 				}
 			],
-			"gasUsed": "0.138870940976992217"
+			"gasUsed": "0.139950822361304377"
 		},
 		{
 			"name": "keyrock",
 			"signers": [
 				{
 					"address": "0x1855f41B8A86e701E33199DE7C25d3e3830698ba",
-					"gasUsed": "0.128643239551715878"
+					"isMultisig": false,
+					"gasUsed": "0.132171332023076126"
 				}
 			],
-			"gasUsed": "0.128643239551715878"
+			"gasUsed": "0.132171332023076126"
 		},
 		{
 			"name": "Stablelab",
 			"signers": [
 				{
 					"address": "0xea172676E4105e92Cc52DBf45fD93b274eC96676",
-					"gasUsed": "0.179728824510547325"
+					"isMultisig": false,
+					"gasUsed": "0.184608911942813805"
 				}
 			],
-			"gasUsed": "0.179728824510547325"
+			"gasUsed": "0.184608911942813805"
 		}
 	],
 	"block_range": {
 		"from": "17427160",
-		"to": "17993699"
+		"to": "18020416"
 	}
 }
