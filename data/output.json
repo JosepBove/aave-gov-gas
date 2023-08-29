@@ -5,74 +5,92 @@
 			"signers": [
 				{
 					"address": "0x329c54289Ff5D6B7b7daE13592C6B1EDA1543eD4",
+					"gasUsed": "0.752567606415828048"
+				},
+				{
+					"address": "0x3Cbded22F878aFC8d39dCD744d3Fe62086B76193",
+					"gasUsed": "0.326632525887672313"
+				},
+				{
+					"address": "0x57ab7ee15cE5ECacB1aB84EE42D5A9d0d8112922",
+					"gasUsed": "0.01109571033798792"
+				}
+			],
+			"gasUsed": "1.090295842641488281"
+		},
+		{
+			"name": "HKTrust",
+			"signers": [
+				{
+					"address": "0xE4594A66d9507fFc0d4335CC240BD61C1173E666",
 					"gasUsed": 0
 				}
 			],
 			"gasUsed": "0.0"
 		},
 		{
-			"name": "Flipside",
+			"name": "TokenLogic",
 			"signers": [
 				{
-					"address": "0x62a43123FE71f9764f26554b3F5017627996816a",
-					"gasUsed": "0.011981792009259212"
+					"address": "0xA06c2e5BB33cd6718b08EC9335081Cbba62861f7",
+					"gasUsed": "0.112798863497090824"
 				}
 			],
-			"gasUsed": "0.011981792009259212"
+			"gasUsed": "0.112798863497090824"
 		},
 		{
 			"name": "michigan",
 			"signers": [
 				{
 					"address": "0x13BDaE8c5F0fC40231F0E6A4ad70196F59138548",
-					"gasUsed": 0
+					"gasUsed": "0.094028941466582086"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.094028941466582086"
 		},
 		{
 			"name": "LBS Blockchain",
 			"signers": [
 				{
 					"address": "0xB83b3e9C8E3393889Afb272D354A7a3Bd1Fbcf5C",
-					"gasUsed": 0
+					"gasUsed": "0.156466388981554788"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.156466388981554788"
 		},
 		{
 			"name": "Wintermute",
 			"signers": [
 				{
 					"address": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
-					"gasUsed": 0
+					"gasUsed": "0.138870940976992217"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.138870940976992217"
 		},
 		{
 			"name": "keyrock",
 			"signers": [
 				{
 					"address": "0x1855f41B8A86e701E33199DE7C25d3e3830698ba",
-					"gasUsed": 0
+					"gasUsed": "0.128643239551715878"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.128643239551715878"
 		},
 		{
 			"name": "Stablelab",
 			"signers": [
 				{
 					"address": "0xea172676E4105e92Cc52DBf45fD93b274eC96676",
-					"gasUsed": 0
+					"gasUsed": "0.179728824510547325"
 				}
 			],
-			"gasUsed": "0.0"
+			"gasUsed": "0.179728824510547325"
 		}
 	],
 	"block_range": {
-		"from": "17343604",
-		"to": "17343620"
+		"from": "17427160",
+		"to": "17993699"
 	}
 }
